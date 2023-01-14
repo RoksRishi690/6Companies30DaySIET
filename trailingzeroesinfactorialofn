@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+usng namespace std;
+int trailingzeroes(int n)
+{
+int trail=0;
+while(n/5>=1)
+{
+trail+=n/5;
+n/=5;
+}
+return trail;
+}
+int main()
+{
+int n;
+cin>>n;
+cout<<trailingzeroes(n)<<endl;
+return 0;
+}
